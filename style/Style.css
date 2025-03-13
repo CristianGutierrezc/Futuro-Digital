@@ -1,0 +1,21 @@
+.cabecera {
+    background-color: rgb(158, 255, 150);
+    height: 2rem;
+}
+.Menu-lateral {
+    background-color: rgb(184, 184, 184);
+   
+}
+.Contenido-principal {
+    background-color: rgb(255, 255, 255);
+   
+}
+.divisor-contenido {
+    background-color: rgb(41, 81, 41);
+    display: grid;
+    height:  calc(100vh - 2rem);
+    grid-template-columns: 20% auto;
+
+
+
+}
