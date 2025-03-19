@@ -1,21 +1,81 @@
-.cabecera {
-    background-color: rgb(158, 255, 150);
-    height: 2rem;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.Menu-lateral {
-    background-color: rgb(184, 184, 184);
-   
+
+.header {
+    background-color: #cb2437;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
 }
-.Contenido-principal {
-    background-color: rgb(255, 255, 255);
-   
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
 }
-.divisor-contenido {
-    background-color: rgb(41, 81, 41);
-    display: grid;
-    height:  calc(100vh - 2rem);
-    grid-template-columns: 20% auto;
 
+.header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
 
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
 
+.content {
+    padding: 20px;
+}
+
+.noticia {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.noticia h2, .noticia h3 {
+    color: #333;
+}
+
+.fecha {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.imagen-noticia {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 20px;
+    border-left: 5px solid #333;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.publicidad {
+    flex: 1;
+    padding: 15px;
+    background-color: #ff0000;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
 }
