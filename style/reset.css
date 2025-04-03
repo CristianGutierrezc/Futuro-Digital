@@ -1,0 +1,12 @@
+/* Reset básico para eliminar estilos predeterminados del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Space Grotesk', sans-serif;
+}

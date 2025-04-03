@@ -1,85 +1,194 @@
+/* Logo */
+.header img {
+    width: 150px; /* Ajusta el tamaño al gusto */
+    height: auto;
+}
+
+/* Variables para dark/light mode */
+:root {
+    --primary-color: #00bcd4;
+    --secondary-color: #ff4081;
+    --background-light: #ffffff;
+    --background-dark: #121212;
+    --text-light: #000;
+    --text-dark: #f4f4f4;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--primary-color);
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header .nav-links li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Toggle Dark Mode */
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Diseño Grid */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* General */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-.header {
-    background-color: #cb2437;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.header h1 {
-display: none;
-}
-
-.header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.header nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.content {
+/* Contenedor principal */
+#main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
+/* Artículos de noticia */
 .noticia {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.noticia h2, .noticia h3 {
+/* Efecto hover sobre la noticia */
+.noticia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de la noticia */
+.noticia-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Título de la noticia */
+.noticia h2 {
+    font-size: 1.5rem;
+    margin: 10px;
     color: #333;
 }
 
-.fecha {
-    color: #777;
-    font-size: 0.9em;
+/* Fecha de la noticia */
+.noticia .fecha {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0 10px 10px;
 }
 
-.imagen-noticia {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
+/* Contenido de la noticia */
+.noticia .contenido {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 10px 20px;
 }
 
-.sidebar {
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin: 20px;
-    border-left: 5px solid #333;
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #main-content {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .noticia h2 {
+        font-size: 1.2rem;
+    }
+
+    .noticia .contenido {
+        font-size: 0.95rem;
+    }
 }
 
-.footer {
-    background-color: #333;
+@media (max-width: 480px) {
+    #main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .noticia-img {
+        height: 150px;
+    }
+
+    .noticia h2 {
+        font-size: 1rem;
+    }
+
+    .noticia .contenido {
+        font-size: 0.9rem;
+    }
+}
+.news-item:hover {
+    background: var(--primary-color);
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
 }
 
-.publicidad {
-    flex: 1;
+/* Sidebar */
+.sidebar {
+    background: var(--secondary-color);
     padding: 15px;
-    background-color: #ff0000;
-    border: 1px solid #ddd;
-    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+/*formulario*/
+.formularioRegistroUsuario {
+background-color: #ff4081;
+border: 1px solid white;
+padding: 1rem;
+display: flex;
+flex-direction: column;
+gap: 1em;
+
+;
 }
 
-.footer a {
-    color: #fff;
-    text-decoration: none;
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--primary-color);
+    color: white;
 }
