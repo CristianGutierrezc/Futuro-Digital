@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuro Digital</title>
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <script defer src="js/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futuro Digital</title>
+  <link rel="stylesheet" href="./style/reset.css" />
+  <link rel="stylesheet" href="./style/Style.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="assets/Logo-futurodigital.png" alt="Futuro Digital Logo">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Futuro en 1 Minuto</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <input type="text" id="search-bar" placeholder="Buscar noticias..." Space Grotesk="buscar noticias">
-        <button id="dark-mode-toggle">💡
-        </button>
-    </header>
-    
-    <main>
-        <section id="main-content" class="content">
-            <!-- Aquí se insertarán las noticias dinámicamente -->
+<!--recalcar que la inspiracion esta un poco en la estructura-->
+  <header class="encabezado">
+    <a href="index.html" class="logo">
+      <img src="./assets/Logo-futurodigital.png" alt="Logo Futuro Digital" />
+      <h1 class="oculto">Futuro Digital</h1>
+    </a>
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="">Tecnología</a></li>
+        <li><a href="">Innovación</a></li>
+        <li><a href="">Ciencia</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-principal">
+    <div class="noticias-destacadas">
+      <section class="seccion-noticia">
+        <a href="./Noticias/noticia1.html" class="noticia-enlace">
+          <img src="./assets/pexels-thisisengineering-3913025.jpg" alt="Noticia 1" />
+          <h2>Tecnología del Futuro</h2>
+          <p>Descubre los últimos avances que marcarán el 2030.</p>
+        </a>
+      </section>
+      <section class="seccion-noticia">
+        <a href="noticia2.html" class="noticia-enlace">
+          <img src="./assets/pexels-apasaric-325185.jpg" alt="Noticia 2" />
+          <h2>Inteligencia Artificial</h2>
+          <p>¿Cómo la IA está cambiando nuestras vidas?</p>
+        </a>
+      </section>
+      <section class="seccion-noticia">
+        <a href="noticia3.html" class="noticia-enlace">
+          <img src="./assets/1200_800.jpeg" alt="Noticia 3" />
+          <h2>Innovación Verde</h2>
+          <p>Proyectos sostenibles con impacto global.</p>
+        </a>
+      </section>
+    </div>
+
+    <div class="bloque-horizontal">
+      <div class="columna-noticias">
+        <section class="noticia-horizontal">
+          <a href="noticia4.html" class="noticia-enlace">
+            <img src="./assets/pexels-impact-dog-crates-1789722873-29547347.jpg" alt="Noticia 4" />
+            <div>
+              <h3>Robots en el hogar</h3>
+              <p>¿Cuánto falta para tener asistentes robots en casa?</p>
+            </div>
+          </a>
+          <a href="comentarios4.html" class="comentarios">💬 Comentarios</a>
         </section>
-    </main>
 
-    <h3>manejo de formulario</h3>
-    <form action="formularioRegistroUsuario">
-<input type="text" name="" ad="">
+        <section class="noticia-horizontal">
+          <a href="noticia5.html" class="noticia-enlace">
+            <img src="./assets/pexels-nurseryart-346885.jpg" alt="Noticia 5" />
+            <div>
+              <h3>Nanotecnología médica</h3>
+              <p>Avances que podrían curar enfermedades incurables.</p>
+            </div>
+          </a>
+          <a href="comentarios5.html" class="comentarios">💬 Comentarios</a>
+        </section>
+      </div>
 
-<input type="password" name="" id="">
-
-<input type="email" name="" id="">
-
-<button type="submit">enviar datos</button>
-<button type="reset">Limpiar datos</button>
-
-
-    </form>
-    <footer class="footer">
-        <p>&copy; 2025 Futuro Digital. Todos los derechos reservados.</p>
-        <p>Síguenos en <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>.</p>
-    </footer>
+      <aside class="publicidad">
+        <p>Publicidad</p>
+      </aside>
+    </div>
+  </main>
+<!--No se si añadir algo mas aqui pero lo importante es linkear la web de xataka para la inspo de estructura-->
+  <footer class="footer">
+    <p>&copy; 2025 Futuro Digital. Todos los derechos reservados.</p>
+    <p>Síguenos en <a href="face">Facebook</a>, <a href="X">Twitter</a>, <a href="Insta">Instagram</a>.</p>
+    <p>Inspirado en <a href="https://www.xataka.com/" target="_blank" rel="xataka">Xataka</a>. Página de noticias.</p>
+  </footer>
 </body>
 </html>

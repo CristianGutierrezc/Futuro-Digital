@@ -1,3 +1,6 @@
+//ESTO YA NO VALE DE NADA//
+
+
 // De todo esto me he ayudado de IA de momento y hay cosas que no se han dado como el forEach
 
 // Botón de Modo Oscuro
@@ -52,7 +55,7 @@ const newsContainer = document.getElementById("main-content");
 // Renderizar Noticias
 function renderNews() {
     newsContainer.innerHTML = ""; // Limpia el contenedor antes de renderizar
-
+//esto es lo experimental 
     newsData.forEach(news => {
         const article = document.createElement("article");
         article.classList.add("noticia");
@@ -84,7 +87,7 @@ function renderNews() {
         newsContainer.appendChild(article);
     });
 }
-
+//y esto igual aunque no funciona del todo bien para mi gusto 
 // Generar fecha aleatoria para cada noticia
 function generarFechaAleatoria() {
     const dia = Math.floor(Math.random() * 20) + 1; // Entre 1 y 20

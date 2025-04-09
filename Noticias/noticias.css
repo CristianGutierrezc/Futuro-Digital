@@ -1,0 +1,144 @@
+:root {
+    --color-fondo: #ffffff;
+    --color-texto: #222222;
+    --color-acento: #00bfa5;
+    --color-gris: #f4f4f4;
+    --color-publicidad: #fff3cd;
+    --fuente-general: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    font-family: var(--fuente-general);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+  }
+  
+  .oculto {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  /* ENCABEZADO */
+  .encabezado {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .menu-navegacion ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    list-style: none;
+  }
+  
+  .menu-navegacion a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 500;
+  }
+  
+  /* CONTENIDO PRINCIPAL */
+  .contenido-principal {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  .noticia h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .noticia .fecha {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+  
+  .noticia img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .noticia .contenido {
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+  
+  /* SECCIÓN DE COMENTARIOS */
+  .comentarios {
+    margin-top: 3rem;
+  }
+  
+  .comentarios h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comentarios form {
+    margin-bottom: 2rem;
+  }
+  
+  .comentarios textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comentarios button {
+    background-color: var(--color-acento);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .comentarios button:hover {
+    background-color: #008f8b;
+  }
+  
+  /* LISTA DE COMENTARIOS */
+  .comentarios-lista {
+    margin-top: 2rem;
+  }
+  
+  .comentario {
+    background-color: var(--color-gris);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comentario p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* PIE DE PÁGINA */
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #ddd;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer a {
+    color: var(--color-acento);
+    text-decoration: none;
+  }
