@@ -73,7 +73,7 @@ Puedes agregar aquí:
 
 ## 🚀 Cómo visualizarlo localmente
 ```bash
-git clone https://github.com/tu-usuario/futuro-digital.git
+git clone https://github.com/cristiangutierrezc/futuro-digital
 cd futuro-digital
 ```
 Abre `index.html` en tu navegador favorito o usa una extensión de Live Server desde VSCode.
