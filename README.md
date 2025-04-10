@@ -19,14 +19,21 @@
 futuro-digital/
 │
 ├── index.html                # Página principal
-├── noticia1.html             # Página individual de una noticia
 │
+├── Noticias/
+│   ├── Noticia1.html
+│   ├── Noticia2.html
+│   ├── Noticia3.html
+│   ├── Noticia4.html
+│   ├── Noticia5.html
+
 ├── style/
 │   ├── reset.css             # CSS Reset
 │   ├── style.css             # Estilos generales
 │   └── noticia.css           # Estilos exclusivos para las noticias
+│   └── Resetnoticias.css           # Reset exclusivos para las noticias
 │
-├── img/                      # Carpeta de imágenes
+├── assets/                  # Carpeta de imágenes
 └── README.md                 # Documentación del proyecto
 ```
 
@@ -66,10 +73,17 @@ Puedes agregar aquí:
 
 ## 🚀 Cómo visualizarlo localmente
 ```bash
-git clone https://github.com/tu-usuario/futuro-digital.git
+git clone https://github.com/cristiangutierrezc/futuro-digital
 cd futuro-digital
 ```
 Abre `index.html` en tu navegador favorito o usa una extensión de Live Server desde VSCode.
+
+---
+
+🌐 Visualizar la web en Netlify
+La web está desplegada en Netlify y se puede visualizar en el siguiente enlace:
+
+🔗 https://futurodigital.netlify.app/
 
 ---
 
