@@ -1,4 +1,4 @@
-//ESTO YA NO VALE DE NADA//
+//ESTO YA NO VALE DE NADA, pero lo tendre por aqui para ver lo practicado//
 
 
 // De todo esto me he ayudado de IA de momento y hay cosas que no se han dado como el forEach
