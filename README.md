@@ -19,7 +19,6 @@
 futuro-digital/
 │
 ├── index.html                # Página principal
-├── noticia1.html             # Página individual de una noticia
 │
 ├── Noticias/
 │   ├── Noticia1.html
