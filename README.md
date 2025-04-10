@@ -82,6 +82,7 @@ Abre `index.html` en tu navegador favorito o usa una extensión de Live Server d
 
 🌐 Visualizar la web en Netlify
 La web está desplegada en Netlify y se puede visualizar en el siguiente enlace:
+
 🔗
 
 ---
