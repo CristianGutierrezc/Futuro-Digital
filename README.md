@@ -48,15 +48,16 @@ futuro-digital/
 ---
 
 ## 📏 Capturas y Comparativas
-Puedes agregar aquí:
+
 1. Vista de la portada 
 2. Detalle de noticia.
 3. Sección de comentarios.
 4. Comparativa con la portada de Xataka (inspiración visual).
 
-> Para subirlas: colócalas en una carpeta `img/` y referéncialas así:
-```md
-![Vista principal](./img/captura-inicio-desktop.png)
+ 
+![Vista principal Xataka](./assets/captura%20xataka.png)
+![Vista principal Futuro Digtital ](./assets/captura%20Futuro%20Digital.png)
+
 ```
 
 ---
